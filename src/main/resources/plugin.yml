@@ -1,0 +1,22 @@
+name: Moneys
+version: '${project.version}'
+main: org.satellite.dev.progiple.moneys.Moneys
+api-version: '1.20'
+softdepend:
+  - PlaceholderAPI
+  - Vault
+authors: [ProGiple]
+commands:
+  moneys:
+    aliases:
+      - money
+      - mon
+      - eco
+      - economy
+permissions:
+  moneys.admin:
+    default: op
+  moneys.balance:
+    default: true
+  moneys.multiplier.1:
+    default: false

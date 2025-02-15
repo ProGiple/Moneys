@@ -1,0 +1,12 @@
+org\satellite\dev\progiple\moneys\listeners\OnQuit.class
+org\satellite\dev\progiple\moneys\Moneys.class
+org\satellite\dev\progiple\moneys\other\configs\config\ConfigManager.class
+org\satellite\dev\progiple\moneys\other\Placeholder.class
+org\satellite\dev\progiple\moneys\listeners\OnJoin.class
+org\satellite\dev\progiple\moneys\Command.class
+org\satellite\dev\progiple\moneys\economy\SalaryRunnable.class
+org\satellite\dev\progiple\moneys\other\configs\data\DataManager.class
+org\satellite\dev\progiple\moneys\other\configs\config\Configuration.class
+org\satellite\dev\progiple\moneys\other\Utils.class
+org\satellite\dev\progiple\moneys\economy\MoneyEconomy.class
+org\satellite\dev\progiple\moneys\other\configs\data\DataConfiguration.class
