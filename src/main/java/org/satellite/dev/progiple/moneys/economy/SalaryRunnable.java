@@ -4,9 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
-import org.satellite.dev.progiple.moneys.other.Utils;
-import org.satellite.dev.progiple.moneys.other.configs.config.ConfigManager;
-import org.satellite.dev.progiple.moneys.other.configs.data.DataManager;
+import org.satellite.dev.progiple.moneys.Utils;
+import org.satellite.dev.progiple.moneys.configs.config.ConfigManager;
+import org.satellite.dev.progiple.moneys.configs.data.DataManager;
 
 import java.util.HashMap;
 import java.util.Map;

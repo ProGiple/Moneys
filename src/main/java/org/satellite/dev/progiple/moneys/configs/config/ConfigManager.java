@@ -1,4 +1,4 @@
-package org.satellite.dev.progiple.moneys.other.configs.config;
+package org.satellite.dev.progiple.moneys.configs.config;
 
 import lombok.experimental.UtilityClass;
 

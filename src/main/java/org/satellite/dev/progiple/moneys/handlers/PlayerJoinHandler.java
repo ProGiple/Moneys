@@ -1,4 +1,4 @@
-package org.satellite.dev.progiple.moneys.listeners;
+package org.satellite.dev.progiple.moneys.handlers;
 
 import lombok.AllArgsConstructor;
 import org.bukkit.entity.Player;
@@ -7,10 +7,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.satellite.dev.progiple.moneys.Moneys;
 import org.satellite.dev.progiple.moneys.economy.SalaryRunnable;
-import org.satellite.dev.progiple.moneys.other.configs.config.ConfigManager;
+import org.satellite.dev.progiple.moneys.configs.config.ConfigManager;
 
 @AllArgsConstructor
-public class OnJoin implements Listener {
+public class PlayerJoinHandler implements Listener {
     private final Moneys plugin;
 
     @EventHandler

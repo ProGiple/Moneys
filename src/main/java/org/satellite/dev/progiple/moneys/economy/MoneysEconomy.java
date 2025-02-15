@@ -1,15 +1,16 @@
 package org.satellite.dev.progiple.moneys.economy;
 
 import lombok.AllArgsConstructor;
+import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
 import org.bukkit.OfflinePlayer;
 import org.satellite.dev.progiple.moneys.Moneys;
-import org.satellite.dev.progiple.moneys.other.configs.data.DataManager;
+import org.satellite.dev.progiple.moneys.configs.data.DataManager;
 
 import java.util.List;
 
 @AllArgsConstructor
-public class MoneyEconomy implements net.milkbowl.vault.economy.Economy {
+public class MoneysEconomy implements Economy {
     private final Moneys moneys;
 
     @Override

@@ -9,10 +9,11 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.ServicePriority;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.satellite.dev.progiple.moneys.economy.MoneyEconomy;
-import org.satellite.dev.progiple.moneys.listeners.OnJoin;
-import org.satellite.dev.progiple.moneys.listeners.OnQuit;
-import org.satellite.dev.progiple.moneys.other.Placeholder;
+import org.satellite.dev.progiple.moneys.command.CommandCompleter;
+import org.satellite.dev.progiple.moneys.economy.MoneysEconomy;
+import org.satellite.dev.progiple.moneys.handlers.PlayerJoinHandler;
+import org.satellite.dev.progiple.moneys.handlers.PlayerQuitHandler;
+import org.satellite.dev.progiple.moneys.command.MainCommand;
 
 import java.io.File;
 
@@ -29,7 +30,7 @@ public final class Moneys extends JavaPlugin {
                 this.getServer().getServicesManager().unregister(economyProvider.getProvider());
             }
             this.getServer().getServicesManager()
-                    .register(Economy.class, new MoneyEconomy(this), this, ServicePriority.Highest);
+                    .register(Economy.class, new MoneysEconomy(this), this, ServicePriority.Highest);
         }
     }
 
@@ -50,13 +51,12 @@ public final class Moneys extends JavaPlugin {
 
         PluginCommand pluginCommand = this.getCommand("moneys");
         if (pluginCommand != null) {
-            Command command = new Command();
-            pluginCommand.setExecutor(command);
-            pluginCommand.setTabCompleter(command);
+            pluginCommand.setExecutor(new MainCommand());
+            pluginCommand.setTabCompleter(new CommandCompleter());
         }
 
-        this.reg(new OnJoin(this));
-        this.reg(new OnQuit());
+        this.reg(new PlayerJoinHandler(this));
+        this.reg(new PlayerQuitHandler());
     }
 
     @Override

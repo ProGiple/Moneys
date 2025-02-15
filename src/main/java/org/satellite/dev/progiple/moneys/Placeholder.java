@@ -1,9 +1,9 @@
-package org.satellite.dev.progiple.moneys.other;
+package org.satellite.dev.progiple.moneys;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.OfflinePlayer;
 import org.jetbrains.annotations.NotNull;
-import org.satellite.dev.progiple.moneys.other.configs.data.DataManager;
+import org.satellite.dev.progiple.moneys.configs.data.DataManager;
 
 public class Placeholder extends PlaceholderExpansion {
     @Override

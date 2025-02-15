@@ -1,10 +1,10 @@
-package org.satellite.dev.progiple.moneys.other.configs.config;
+package org.satellite.dev.progiple.moneys.configs.config;
 
 import lombok.Getter;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.satellite.dev.progiple.moneys.Moneys;
-import org.satellite.dev.progiple.moneys.other.Utils;
+import org.satellite.dev.progiple.moneys.Utils;
 
 import java.util.HashMap;
 import java.util.Map;
