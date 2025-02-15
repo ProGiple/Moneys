@@ -1,14 +1,14 @@
 package org.satellite.dev.progiple.moneys.command.released_subcommands;
 
 import org.bukkit.command.CommandSender;
-import org.satellite.dev.progiple.moneys.command.SubCommand;
+import org.satellite.dev.progiple.moneys.command.ISubCommand;
 import org.satellite.dev.progiple.moneys.configs.config.ConfigManager;
 import org.satellite.dev.progiple.moneys.configs.data.DataManager;
 import org.satellite.dev.progiple.moneys.Utils;
 
 import java.util.List;
 
-public class GiveSubCommand implements SubCommand {
+public class GiveSubCommand implements ISubCommand {
     @Override
     public String getName() {
         return "give";

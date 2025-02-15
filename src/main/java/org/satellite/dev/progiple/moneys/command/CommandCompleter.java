@@ -15,7 +15,7 @@ public class CommandCompleter implements TabCompleter {
             return new ArrayList<>(MainCommand.getSubCommands().keySet());
         }
         else if (args.length >= 2) {
-            SubCommand subCommand = MainCommand.getSubCommands().get(args[0].toLowerCase());
+            ISubCommand subCommand = MainCommand.getSubCommands().get(args[0].toLowerCase());
             if (subCommand != null) {
                 return subCommand.tabComplete(sender, args);
             }

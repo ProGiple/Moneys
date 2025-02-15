@@ -1,13 +1,13 @@
 package org.satellite.dev.progiple.moneys.command.released_subcommands;
 
 import org.bukkit.command.CommandSender;
-import org.satellite.dev.progiple.moneys.command.SubCommand;
+import org.satellite.dev.progiple.moneys.command.ISubCommand;
 import org.satellite.dev.progiple.moneys.configs.config.ConfigManager;
 import org.satellite.dev.progiple.moneys.configs.data.DataManager;
 
 import java.util.List;
 
-public class ReloadSubCommand implements SubCommand {
+public class ReloadSubCommand implements ISubCommand {
     @Override
     public String getName() {
         return "reload";

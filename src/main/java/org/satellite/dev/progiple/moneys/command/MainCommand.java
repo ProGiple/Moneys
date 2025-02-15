@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class MainCommand implements CommandExecutor {
     @Getter
-    private final static Map<String, SubCommand> subCommands = new HashMap<>();
+    private final static Map<String, ISubCommand> subCommands = new HashMap<>();
 
     public MainCommand() {
         new ReloadSubCommand().register();
@@ -24,7 +24,7 @@ public class MainCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, org.bukkit.command.@NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (args.length > 0) {
-            SubCommand subCommand = subCommands.get(args[0].toLowerCase());
+            ISubCommand subCommand = subCommands.get(args[0].toLowerCase());
             if (subCommand != null) {
                 subCommand.execute(sender, args);
                 return true;
